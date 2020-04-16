@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import data from './data';
-import { ProductContext } from './contexts'
-import { CartContext } from './contexts'
+import { ProductContext } from './contexts/ProductContext'
+import { CartContext } from './contexts/CartContext'
 
 // Components
 import Navigation from './components/Navigation';
@@ -16,7 +16,7 @@ function App() {
 	const addItem = item => {
 		// add the given item to the cart
 		// console.log()
-		setCart(item)
+		setCart([...cart, item])
 	};
 
 	return (
