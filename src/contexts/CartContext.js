@@ -1,4 +1,4 @@
 import { createContext } from 'react';
 
 export const CartContext = createContext();
-console.log({CartContext})
+console.log("cart context", {CartContext})
